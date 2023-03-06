@@ -6,8 +6,10 @@ use Livewire\Component;
 
 class Company extends Component
 {
+    
+
     public function render()
     {
-        return view('livewire.company');
+        return view('livewire.company')->layout('layouts.app');
     }
 }

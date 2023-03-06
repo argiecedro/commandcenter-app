@@ -26,14 +26,14 @@
         <x-sidenav/>
     </aside>
     
-    <main class="container mx-auto">
+    <main>
         
         
             
            
         
         
-
+   
         
            @yield('content')  
         

@@ -1,3 +1,23 @@
-<div>
-    {{-- Do your work, then step back. --}}
+
+@extends('layouts.app')
+
+@section('content')
+
+
+
+<div class="container">
+    <div class="flex">
+        <x-breadcrumb/>
+    </div>
+    
+    <div>
+        Test
+    </div>
 </div>
+
+
+
+
+
+
+@endsection
