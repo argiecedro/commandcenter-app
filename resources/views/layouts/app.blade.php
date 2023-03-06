@@ -26,18 +26,11 @@
         <x-sidenav/>
     </aside>
     
-    <main>
+    <main class="flex-1 mx-auto h-screen">
         
-        
-            
-           
-        
-        
-   
-        
+                
            @yield('content')  
-        
-            
+                 
         
         
     </main>
