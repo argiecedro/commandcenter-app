@@ -14,7 +14,7 @@
      {{-- Sidebar - Start --}}
      <div x-data="{open: false}" 
           x-bind:class="open ? 'w-64' : 'w-21'"
-          class="bg-gray-200 shadow-md h-screen p-5 pt-5 relative">
+          class="bg-gray-200 shadow-md h-screen p-3 pt-5 relative">
 
           {{-- Sidebar Button - Start --}}
           <svg x-on:click="open = ! open"
@@ -40,7 +40,7 @@
                x-bind:class="open ? 'h-14 w-14' : 'h-6 w-6'" 
                alt="">
           <span 
-               x-bind:class="open ? 'font-bold text-2xl text-center text-blue-800 p-4' : 'hidden'">
+               x-bind:class="open ? 'font-bold text-2xl text-left text-blue-800 p-4' : 'hidden'">
                Command Center
           </span>
           </div>
