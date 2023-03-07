@@ -11,30 +11,11 @@
 
 <body>
     
-<style>
-            [x-cloak] {
-            display: none;
-        }
-</style>
-  
-    
+
+       
+   
 
 
-<div x-data class="flex">
-
-    <aside>
-        <x-sidenav/>
-    </aside>
-    
-    <main class="flex-1 mx-auto h-screen">
-        
-                
-           @yield('content')  
-                 
-        
-        
-    </main>
-</div>
 
 
 

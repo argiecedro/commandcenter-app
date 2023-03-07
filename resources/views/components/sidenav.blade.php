@@ -23,10 +23,10 @@
                 </a>
             </ul>
 
-{{--           <div class="w-max p-2.5">
-            <img src="../img/cc.svg" class="h-8 w-8" alt="">
-            
-          </div> --}}
+            {{--           <div class="w-max p-2.5">
+                        <img src="../img/cc.svg" class="h-8 w-8" alt="">
+                        
+                      </div> --}}
           
           <ul class="mt-6 space-y-2 tracking-wide">
             <li class="min-w-max">
