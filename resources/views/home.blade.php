@@ -14,7 +14,7 @@
      {{-- Sidebar - Start --}}
      <div x-data="{open: false}" 
           x-bind:class="open ? 'w-64' : 'w-21'"
-          class="bg-gray-200 shadow-md h-screen p-3 pt-5 relative xs:collapse sm:collapse lg:visible">
+          class="xs:collapse bg-gray-200 shadow-md h-screen p-3 pt-5 relative lg:visible ">
 
           {{-- Sidebar Button - Start --}}
           <svg x-on:click="open = ! open"
