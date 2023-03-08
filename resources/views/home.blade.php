@@ -14,7 +14,7 @@
      {{-- Sidebar - Start --}}
      <div x-data="{open: false}" 
           x-bind:class="open ? 'w-64' : 'w-21'"
-          class=" bg-gray-200 shadow-md h-screen p-3 pt-5 relative mobile:collapse">
+          class=" bg-gray-200 shadow-md h-screen p-3 pt-5 relative">
 
           {{-- Sidebar Button - Start --}}
           <svg x-on:click="open = ! open"
@@ -65,8 +65,11 @@
       {{-- Table Start --}}
 
           <!-- component -->
-
-     <table class="w-full border-collapse rounded-sm overflow-auto bg-white text-left text-sm text-gray-500">
+      <div class="mobile:overflow-auto rounded-md shadow-md">
+        <div class="bg-gray-500 relative">
+test
+        </div>
+             <table class="w-full border-collapse rounded-sm overflow-auto bg-white text-left text-sm text-gray-500">
        <thead class="bg-gray-50">
          <tr>
            <th scope="col" class="px-6 py-4 font-medium text-gray-900">Name</th>
@@ -489,6 +492,8 @@
          </tr>
        </tbody>
      </table>
+      </div>
+
    
 
           {{-- Table End --}}
