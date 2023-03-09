@@ -10,10 +10,7 @@ module.exports = {
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
-    screens: {
-      'mobile': {'max': '428px'},
-      
-    },
+
 
   },
   plugins: [
