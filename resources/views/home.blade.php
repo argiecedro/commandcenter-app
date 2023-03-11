@@ -10,8 +10,8 @@
 
 <body>
 
-
-<header class="bg-pink-300 sticky top-0 z-10">
+<div x-data="{ open: false }">
+<header class="bg-gray-100 bg-blur-30 opacity-95 sticky top-0 z-10">
 
 <div class="flex flex-row justify-between py-4 px-4">
   <div class="flex-1 py-2 px-2">
@@ -28,8 +28,8 @@
     
 <button 
 
-
-class="rounded py-2 px-2">
+x-on:click="open = ! open"
+class="rounded py-2 px-2 md:hidden">
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
   </svg>
@@ -44,19 +44,16 @@ class="rounded py-2 px-2">
 
 </header>
 
-<div
-
-class="flex z-0">
+<div class="flex z-0">
 <aside 
-
-
-class="bg-teal-400 h-screen hidden md:block w-64 fixed">
+:class="open ? 'block' : 'hidden'"
+class="bg-teal-400 h-screen md:block w-64 fixed">
   <div>
     <x-testnav></x-testnav>
   </div>
 </aside>
 
-<main class="bg-blue-400 w-full h-screen mx-auto md:ml-64">
+<main class="bg-blue-400 w-full h-screen md:mx-auto md:ml-64">
   <div class="py-4 px-4">
     <x-table></x-table>
   </div>
@@ -71,7 +68,7 @@ class="bg-teal-400 h-screen hidden md:block w-64 fixed">
 
 
 
-
+</div>
 
 
 
