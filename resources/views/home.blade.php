@@ -57,6 +57,8 @@ class="bg-teal-400 h-screen md:block w-64 fixed">
 <main class="bg-gray-100  p-4 h-screen w-full mx-auto">
 
 <div class="container">
+
+
   
   <x-table></x-table>
 
